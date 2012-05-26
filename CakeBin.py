@@ -8,7 +8,13 @@ import webbrowser
 
 class CakebinCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
-		self.view.window().show_input_panel('What is your nickname?', '', self.handle, self.on_change, self.on_cancel);
+		s = sublime.load_settings("CakeBin.sublime-settings")
+		nickname = s.get('nickname')
+
+		if nickname == False:
+			self.view.window().show_input_panel('What is your nickname?', '', self.handle, self.on_change, self.on_cancel);
+		else:
+			self.handle(nickname)
 
 	def handle(self, nickname):
 		selection = ''

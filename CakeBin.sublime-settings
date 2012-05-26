@@ -1,0 +1,5 @@
+{
+	// Nickname to use when posting to bin.cakephp.org.
+	// If false, your nickname will always be asked before submitting.
+	"nickname": false
+}
