@@ -61,7 +61,7 @@ class CakebinApiCall(threading.Thread):
 			data = {
 				'data[_Token][key]':tokenKey,
 				'data[NewPaste][body]': self.string,
-				'data[NewPaste[nick]': self.nickname,
+				'data[NewPaste][nick]': self.nickname,
 				'data[NewPaste][lang]': lang,
 				'data[NewPaste][note]': '',
 				'data[NewPaste][save]': '0',
