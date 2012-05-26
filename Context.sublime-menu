@@ -1,0 +1,5 @@
+[
+    { "caption": "-" },
+    { "command": "cakebin", "caption": "Send to bin.cakephp.org" },
+    { "caption": "-", "id": "end" }
+]
